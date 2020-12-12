@@ -1,7 +1,7 @@
 ## FCOS: Pytorch Implementation Support Odgt_Nori、PASCAL VOC and MS COCO
-**FCOS的简洁实现：** 本项目属于codebase建设的一部分，旨在支持odgt格式的数据标注以及Nori的image存储格式，在不用改任何参数（包括数据路径）的情况下，也能一键跑通本项目代码。
+ **FCOS的简洁实现：** 本项目属于codebase建设的一部分，旨在支持odgt格式的数据标注以及Nori的image存储格式，在不用改任何参数（包括数据路径）的情况下，也能一键跑通本项目代码。
 
-对于odgt标注格式的数据，本项目支持两种读取方式：一种是将odgt标注文件和images放在本地路径下（以下统称为 **：Local** ），另一种是odgt标注文件存于OSS中，image是nori存储方式（以下统称为 **：OSS** ），下面对这两种方式分别进行说明：
+对于odgt标注格式的数据，本项目支持两种读取方式：一种是将odgt标注文件和images放在本地路径下（以下统称为  **：Local** ），另一种是odgt标注文件存于OSS中，image是nori存储方式（以下统称为  **：OSS** ），下面对这两种方式分别进行说明：
 
 ### OSS
 
