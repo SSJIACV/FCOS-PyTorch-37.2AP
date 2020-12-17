@@ -48,6 +48,8 @@ class BasicBlock(nn.Module):
         out = self.relu(out)
 
         return out
+
+        
 class Bottleneck(nn.Module):
     # ResNet-B
     expansion = 4
@@ -86,6 +88,8 @@ class Bottleneck(nn.Module):
         out = self.relu(out)
 
         return out
+
+
 class ResNet(nn.Module):
 
     def __init__(self, block, layers, num_classes=1000,if_include_top=False):
@@ -195,7 +199,8 @@ def resnet50(pretrained=False, **kwargs):
     """
     model = ResNet(Bottleneck, [3, 4, 6, 3], **kwargs)
     if pretrained:
-        model.load_state_dict(torch.load('./resnet50.pth'),strict=False)
+        # model.load_state_dict(torch.load('./resnet50.pth'),strict=False)
+        model.load_state_dict(model_zoo.load_url(model_urls['resnet50']),strict=False)
     return model
 
 

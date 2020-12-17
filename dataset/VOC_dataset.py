@@ -17,6 +17,9 @@ def flip(img, boxes):
         boxes[:, 0] = xmin
     return img, boxes
 
+# train_dataset = VOCDataset(root_dir='/Users/VOC0712',resize_size=[800,1333],
+#                            split='trainval',use_difficult=False,is_train=True,augment=transform)
+
 class VOCDataset(torch.utils.data.Dataset):
     CLASSES_NAME = (
         "__background__ ",

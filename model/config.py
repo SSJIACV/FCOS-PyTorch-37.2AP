@@ -1,15 +1,19 @@
 class DefaultConfig():
     #backbone
-    pretrained=True
+    # pretrained=True
+    pretrained=False
     freeze_stage_1=True
     freeze_bn=True
+    # freeze_stage_1=False
+    # freeze_bn=False
 
     #fpn
     fpn_out_channels=256
     use_p5=True
     
     #head
-    class_num=80
+    # class_num=80
+    class_num=2
     use_GN_head=True
     prior=0.01
     add_centerness=True
